@@ -1,0 +1,36 @@
+﻿<Window x:Class="Registration.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registration"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "Auto" />
+            <RowDefinition Height = "Auto" />
+            <RowDefinition Height = "Auto" />
+            <RowDefinition Height = "Auto" />
+            <RowDefinition />
+            <RowDefinition Height = "Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width = "Auto" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Label Margin = "5" Grid.Row = "0" Grid.Column = "0" Content = "First Name" />
+        <Label Margin = "5" Grid.Row = "1" Grid.Column = "0" Content = "Last Name" />
+        <Label Margin = "5" Grid.Row = "2" Grid.Column = "0" Content = "Age" />
+
+        <TextBox Margin = "5" Grid.Row = "0" Grid.Column = "1" Name = "txtFirstName" />
+        <TextBox Margin = "5" Grid.Row = "1" Grid.Column = "1" Name = "txtLastName" />
+        <TextBox Margin = "5" Grid.Row = "2" Grid.Column = "1" Name = "txtAge" />
+
+        <Button Margin = "5" Name = "btnAdd" Grid.Row = "3" Height = "25" Content = "Add" Click = "btnAdd_Click" />
+        <TextBox Margin = "5" Name = "txtInfo" Grid.Row = "4" Grid.ColumnSpan = "2" />
+        <Button Margin = "5" Name = "btnViewAll" Grid.Row = "5" Height = "25" Content = "View All" Click = "btnViewAll_Click" />
+    </Grid>
+</Window>
